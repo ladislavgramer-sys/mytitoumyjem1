@@ -1,68 +1,122 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Ti To Umyjem</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MY TI TO UMYJEM</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preload" as="image" href="img/logo.png">
 </head>
 <body>
-  <header>
-    <img src="assets/logo.png" alt="My Ti To Umyjem logo" class="logo">
-    <nav>
+<header class="header">
+  <div class="container bar">
+    <a class="logo" href="#top">
+      <img src="img/logo.png" alt="MY TI TO UMYJEM logo">
+      <span>MY TI TO UMYJEM</span>
+    </a>
+    <nav class="nav">
       <a href="#about">O nás</a>
-      <a href="#services">Služby</a>
-      <a href="#references">Reference</a>
-      <a href="#gallery">Galerie</a>
-      <a href="#contact">Kontakt</a>
+      <a href="#sluzby">Služby</a>
+      <a href="#reference">Reference</a>
+      <a href="#kontakt">Kontakt</a>
     </nav>
-  </header>
+    <a class="cta" href="tel:+420739598014">Zavolat</a>
+  </div>
+</header>
 
-  <section class="hero">
-    <h1>Čistíme střechy, fasády, žlaby a zámkovou dlažbu</h1>
-    <p>Spolehlivě, rychle a bez starostí.</p>
-  </section>
-
-  <section id="about">
-    <h2>O nás</h2>
-    <p>Jsme profesionální tým specializující se na čištění střech, fasád, žlabů a chodníků. Nabízíme kvalitní práci s moderní technikou.</p>
-  </section>
-
-  <section id="services">
-    <h2>Služby</h2>
-    <ul>
-      <li>Čištění střech</li>
-      <li>Čištění fasád</li>
-      <li>Čištění žlabů</li>
-      <li>Čištění zámkové dlažby</li>
-    </ul>
-  </section>
-
-  <section id="references">
-    <h2>Reference</h2>
-    <blockquote>„Byli jsme maximálně spokojeni. Rychlá a kvalitní práce.“ – Novákovi</blockquote>
-    <blockquote>„Fasáda vypadá jako nová. Doporučujeme všem!“ – Svobodovi</blockquote>
-  </section>
-
-  <section id="gallery">
-    <h2>Galerie realizací</h2>
-    <div class="gallery">
-      <img src="assets/sample1.jpg" alt="Realizace 1">
-      <img src="assets/sample2.jpg" alt="Realizace 2">
-      <img src="assets/sample3.jpg" alt="Realizace 3">
+<main id="top" class="hero">
+  <div class="container wrap">
+    <div>
+      <h1 class="h-title">Čistíme střechy, fasády, žlaby a zámkovou dlažbu</h1>
+      <p class="h-sub">Šetrně, bezpečně a s garancí spokojenosti. Působíme po celé ČR.</p>
+      <div class="buttons">
+        <a class="btn" href="#kontakt">Nezávazná poptávka</a>
+        <a class="btn alt" href="#reference">Reference</a>
+      </div>
     </div>
-  </section>
+    <div>
+      <!-- necháváme čistý vzhled, bez radikálních změn -->
+      <div style="height:260px;border-radius:14px;border:1px solid rgba(255,255,255,.06);background:linear-gradient(135deg,rgba(14,165,233,.15),rgba(250,204,21,.12));"></div>
+    </div>
+  </div>
+</main>
 
-  <section id="contact">
+<section id="sluzby" class="section">
+  <div class="container">
+    <h2>Před / po – ukázky</h2>
+    <div class="ba-grid">
+      <article class="ba-card">
+        <header><span>Střecha</span><span class="small">reálné fotky brzy doplníme</span></header>
+        <div class="ba-pair">
+          <figure><img src="img/strecha_pred.svg" alt="Střecha – před"><span class="badge">Před</span></figure>
+          <figure><img src="img/strecha_po.svg" alt="Střecha – po"><span class="badge po">Po</span></figure>
+        </div>
+      </article>
+      <article class="ba-card">
+        <header><span>Fasáda</span><span class="small">reálné fotky brzy doplníme</span></header>
+        <div class="ba-pair">
+          <figure><img src="img/fasada_pred.svg" alt="Fasáda – před"><span class="badge">Před</span></figure>
+          <figure><img src="img/fasada_po.svg" alt="Fasáda – po"><span class="badge po">Po</span></figure>
+        </div>
+      </article>
+      <article class="ba-card">
+        <header><span>Zámková dlažba</span><span class="small">reálné fotky brzy doplníme</span></header>
+        <div class="ba-pair">
+          <figure><img src="img/dlazba_pred.svg" alt="Dlažba – před"><span class="badge">Před</span></figure>
+          <figure><img src="img/dlazba_po.svg" alt="Dlažba – po"><span class="badge po">Po</span></figure>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="reference" class="section">
+  <div class="container">
+    <h2>Reference zákazníků</h2>
+    <div class="refs">
+      <div class="ref">
+        <div class="stars">★★★★★</div>
+        <p>Rychlá domluva, šetrné čištění střechy a perfektní výsledek. Doporučuji!</p>
+        <div class="small">— Petra K.</div>
+      </div>
+      <div class="ref">
+        <div class="stars">★★★★★</div>
+        <p>Fasáda jako nová. Tým dorazil přesně a vše po sobě uklidil.</p>
+        <div class="small">— Jan M.</div>
+      </div>
+      <div class="ref">
+        <div class="stars">★★★★★</div>
+        <p>Skvělá komunikace a férová cena. Dlažba doslova prokoukla.</p>
+        <div class="small">— Radek S.</div>
+      </div>
+    </div>
+    <p class="small" style="margin-top:10px">Chcete mít zde živé recenze z Google? Vložte odkaz na svůj firemní profil nebo použijte widget (např. Elfsight) do tohoto bloku.</p>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <h2>O nás</h2>
+    <p class="small">Jsme profesionální tým se špičkovou technikou a pojištěním odpovědnosti. Pracujeme šetrně, bez rizika poškození povrchů.</p>
+  </div>
+</section>
+
+<section id="kontakt" class="section">
+  <div class="container">
     <h2>Kontakt</h2>
-    <p>Email: info@mytitoumyjem.cz</p>
-    <p>Telefon: +420 739 598 014</p>
-  </section>
+    <p class="small">Telefon: <a href="tel:+420739598014">739 598 014</a> • E‑mail: <a href="mailto:info@mytitoumyjem.cz">info@mytitoumyjem.cz</a></p>
+    <div class="buttons">
+      <a class="btn" href="mailto:info@mytitoumyjem.cz?subject=Poptávka%20čištění">Poslat poptávku e‑mailem</a>
+      <a class="btn alt" href="#top">Nahoru</a>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 My Ti To Umyjem</p>
-  </footer>
+<footer>
+  <div class="container">© MY TI TO UMYJEM</div>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
