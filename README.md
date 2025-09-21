@@ -1,18 +1,15 @@
 # MY TI TO UMYJEM – mini web (Vercel)
 
-## E‑mail odesílání (Resend)
-1. Ve Vercel projektu otevři **Settings → Environment Variables** a přidej:
-   - `RESEND_API_KEY` = tvůj API klíč z https://resend.com
-   - `CONTACT_EMAIL` = adresa, na kterou dorazí kopie (např. info@mytitoumyjem.cz)
-2. V **Domains** ponech vlastní doménu (mytitoumyjem.cz).
-3. Deploy a hotovo. Formulář odešle souhrn na tvůj e‑mail i na e‑mail zákazníka.
+## Co je uvnitř
+- `index.html`, `style.css`, `script.js` – statický web
+- `assets/images/…` – logo a fotky (před/po)
+- `api/send-email.js` – serverless funkce pro odeslání e‑mailu přes **Resend**
 
+## Nasazení na Vercel
+1. Nahrajte repozitář na GitHub a v **Vercel** ho importujte.
+2. V projektu otevřete **Settings → Environment Variables** a přidejte:
+   - `RESEND_API_KEY` — API klíč z https://resend.com
+   - `CONTACT_EMAIL` — `info@mytitoumyjem.cz`
+3. Deploy. Formulář v sekci **Kontakt** odešle e‑mail vám i zákazníkovi.
 
-### Důležitá poznámka k odesílateli
-- Pokud ještě **nemáš ověřenou doménu v Resend**, nech proměnnou `FROM_EMAIL` prázdnou a použije se `onboarding@resend.dev` (funguje hned).
-- Jakmile ověříš doménu `mytitoumyjem.cz` v Resend, můžeš přidat do proměnných:
-  - `FROM_EMAIL` = např. `noreply@mytitoumyjem.cz`
-
-### Kde hledat chyby
-- Vercel → **Logs → Functions** (vyber nejnovější request na `/api/send-calc`) – uvidíš případné chybové hlášky z Resend.
-- Rychlá kontrola: otevři `/api/send-calc` v prohlížeči (GET) – mělo by vrátit JSON `{"ok":true,"health":"send-calc alive"}`.
+> Pokud Vercel běží na vlastní doméně, doporučuji mít doménu připojenou v **Settings → Domains**.
