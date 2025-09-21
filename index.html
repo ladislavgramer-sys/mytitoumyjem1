@@ -3,38 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MY TI TO UMYJEM</title>
+  <title>My Ti To Umyjem</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Logo" class="logo">
-    <h1>Čištění fasád, střech, žlabů a dlažby</h1>
-    <p>Profesionální vybavení, bezpečné postupy a viditelné výsledky.</p>
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="My Ti To Umyjem logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">O nás</a></li>
+        <li><a href="#services">Služby</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+    <a href="tel:+420123456789" class="btn-call">Volat</a>
   </header>
 
-  <section class="formular">
-    <h2>Nezávazná kalkulace</h2>
-    <form id="calc-form">
-      <label><input type="checkbox" name="sluzba" value="střecha"> Střecha</label><br>
-      <label><input type="checkbox" name="sluzba" value="fasáda"> Fasáda</label><br>
-      <label><input type="checkbox" name="sluzba" value="dlažba"> Dlažba</label><br>
-      <label><input type="checkbox" name="sluzba" value="žlaby"> Žlaby</label><br><br>
-
-      <label><input type="checkbox" name="impregnace"> S impregnací <span class="doporu"> (doporučujeme!)</span></label><br><br>
-
-      <label for="metry">Zadejte m²:</label>
-      <input type="number" id="metry" name="metry" required><br><br>
-
-      <button type="button" onclick="spocitat()">Spočítat cenu</button>
-    </form>
-    <p id="vysledek"></p>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Čistíme střechy, fasády, žlaby a zámkovou dlažbu</h1>
+      <p>Spolehlivě, rychle a bez starostí – s profesionální technikou a šetrnými prostředky.</p>
+      <div class="hero-buttons">
+        <a href="#kalkulace" class="btn-primary">Rychlá kalkulace</a>
+        <a href="tel:+420123456789" class="btn-secondary">Zavolat hned</a>
+      </div>
+      <div class="badges">
+        <span>✅ Šetrné k povrchům</span>
+        <span>✅ Pojištění odpovědnosti</span>
+        <span>✅ Záruka spokojenosti</span>
+      </div>
+    </div>
   </section>
-
-  <footer>
-    <p>Kontakt: <a href="mailto:info@mytitoumyjem.cz">info@mytitoumyjem.cz</a> | Tel: 739 598 014</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
