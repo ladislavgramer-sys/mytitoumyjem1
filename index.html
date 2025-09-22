@@ -2,10 +2,14 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MY TI TO UMYJEM</title>
-  <meta name="description" content="Profesionální čištění střech, fasád, žlabů a dlažby. Bezpečné postupy, ověřené technologie a důraz na detail." />
+  <meta name="description" content="Profesionální čištění střech, fasád, žlabů a dlažby. Šetrně, bezpečně, s důrazem na detail." />
+  <meta name="theme-color" content="#0b0f15" />
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta property="og:title" content="MY TI TO UMYJEM" />
+  <meta property="og:description" content="Čištění střech, fasád, žlabů a dlažby • Rychlá poptávka, fotografie referencí" />
+  <meta property="og:type" content="website" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -21,7 +25,7 @@
       <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Otevřít menu" />
       <label for="nav-toggle" class="burger" aria-hidden="true"><span></span></label>
 
-      <nav class="nav">
+      <nav class="nav" id="mainnav">
         <a href="#onas">O nás</a>
         <a href="#sluzby">Služby</a>
         <a href="#reference">Reference</a>
@@ -56,7 +60,7 @@
         </ul>
       </div>
       <div class="media">
-        <img class="card shadow" src="roof-cleaning-7.jpg" alt="Čištění střechy – ukázka" />
+        <img class="card shadow" src="roof-cleaning-7.jpg" alt="Čištění střechy – ukázka" loading="lazy" />
       </div>
     </div>
   </section>
@@ -67,17 +71,17 @@
       <h2>Naše služby</h2>
       <div class="cards">
         <article class="card">
-          <img src="roof-cleaning-7.jpg" alt="Čištění střech" />
+          <img src="roof-cleaning-7.jpg" alt="Čištění střech" loading="lazy" />
           <h3>Čištění střech</h3>
           <p>Odstranění mechu, řas a lišejníků. Dočištění a <strong>impregnace</strong> pro delší životnost.</p>
         </article>
         <article class="card">
-          <img src="20.jpg" alt="Čištění fasád" />
+          <img src="20.jpg" alt="Čištění fasád" loading="lazy" />
           <h3>Čištění fasád</h3>
           <p>Šetrné mytí omítek, sanace znečištění a <strong>obnova vzhledu</strong> fasády.</p>
         </article>
         <article class="card">
-          <img id="img-dlazba" src="" alt="Dlažba a okapy" />
+          <img id="img-dlazba" src="" alt="Dlažby a okapy" loading="lazy" />
           <h3>Dlažby &amp; okapy</h3>
           <p>Vyčištění zámkové dlažby, odmaštění a proplach žlabů. <strong>Bez zbytečného nepořádku</strong>.</p>
         </article>
@@ -90,9 +94,9 @@
     <div class="wrap">
       <h2>Reference</h2>
       <div class="ref-grid">
-        <img id="ref-strechy" class="shadow" src="" alt="Reference – mytí střechy">
-        <img class="shadow" src="Mycie-elewacji-Skierniewice.webp" alt="Reference – mytí fasády">
-        <img class="shadow" src="mycie-elewacji-warszawa.jpg" alt="Reference – mytí fasády 2">
+        <img id="ref-strechy" class="shadow" src="" alt="Reference – mytí střechy" loading="lazy">
+        <img class="shadow" src="Mycie-elewacji-Skierniewice.webp" alt="Reference – mytí fasády" loading="lazy">
+        <img class="shadow" src="mycie-elewacji-warszawa.jpg" alt="Reference – mytí fasády 2" loading="lazy">
       </div>
     </div>
   </section>
@@ -110,10 +114,13 @@
           <a href="tel:+420775924560">+420 775 924 560</a>
         </p>
         <p>Pošlete nám pár fotek a adresu. Do 24 hodin vám připravíme nabídku.</p>
-        <a class="btn primary" href="mailto:info@mytitoumyjem.cz?subject=Poptávka%20čištění">Poptat čištění</a>
+        <div class="contact-cta">
+          <a class="btn primary" href="mailto:info@mytitoumyjem.cz?subject=Poptávka%20čištění">Poptat čištění</a>
+          <a class="btn" href="tel:+420739598014">Zavolat</a>
+        </div>
       </div>
       <div class="media">
-        <img class="card shadow" src="roof-cleaning-7.jpg" alt="Detail práce – střecha">
+        <img class="card shadow" src="roof-cleaning-7.jpg" alt="Detail práce – střecha" loading="lazy">
       </div>
     </div>
   </section>

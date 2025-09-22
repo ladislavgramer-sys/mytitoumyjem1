@@ -7,10 +7,11 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
   });
 });
 
-// Try multiple possible logo filenames so it works with your current repo; show as circle via CSS
+// Logo candidates (shown as a circle via CSS)
 (function(){
   const candidates = [
     'logo.png',
+    'favicon.png', // fallback - kruhová verze bude taky vypadat dobře
     'image0 (1).png',
     'image (1).png',
     'image0.png',
@@ -28,7 +29,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
   tryNext(0);
 })();
 
-// Robust fallbacks for missing images
+// Robust fallbacks for missing images (dlažba + reference střechy)
 function setFirstExisting(imgEl, names){
   const test = new Image();
   let i = 0;
@@ -47,7 +48,7 @@ setFirstExisting(
     'img_20201026_093828_6-1618203617218-768x1024.jpg',
     'img_20201026_093828.jpg',
     'dlazba.jpg',
-    'mycie-elewacji-warszawa.jpg' // nouzový fallback
+    'mycie-elewacji-warszawa.jpg'
   ]
 );
 
