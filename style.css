@@ -22,8 +22,10 @@ body{font-family:system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif;
 
 /* Header */
 .site-header{position:sticky;top:0;z-index:50;background:rgba(12,16,24,.75);backdrop-filter:saturate(120%) blur(6px);border-bottom:1px solid var(--edge)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-.brand img{vertical-align:middle}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+.brand{display:flex;align-items:center;gap:10px}
+.brand img{width:56px;height:56px;border-radius:50%;object-fit:cover;border:1px solid var(--edge);background:#0a0d12}
+.brand-text{font-weight:700;letter-spacing:.2px;opacity:.95}
 .nav a{margin-left:18px;opacity:.9}
 .nav .cta{padding:8px 14px;border:1px solid var(--edge);border-radius:10px}
 .nav a:hover{opacity:1}
