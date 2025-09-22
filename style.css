@@ -89,3 +89,31 @@ body{font-family:system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif;
 @media (prefers-reduced-motion: reduce){
   *{scroll-behavior:auto !important;animation:none !important;transition:none !important}
 }
+
+
+/* Social icons */
+.social-icon svg{vertical-align:middle;fill:currentColor}
+.nav .social-icon{margin-left:12px;opacity:.9}
+.nav .social-icon:hover{opacity:1}
+.footer-inner .socials{display:flex;gap:12px}
+.footer-inner .socials .social-icon{opacity:.85}
+.footer-inner .socials .social-icon:hover{opacity:1}
+
+
+/* Colored social icons */
+.social-icon[aria-label="Facebook"] svg { fill: #1877F2; }
+.social-icon[aria-label="Instagram"] svg { 
+  fill: url(#ig-gradient);
+}
+
+/* Define Instagram gradient */
+svg defs linearGradient#ig-gradient {
+  stop:nth-child(1) { stop-color:#f58529; }
+  stop:nth-child(2) { stop-color:#dd2a7b; }
+  stop:nth-child(3) { stop-color:#8134af; }
+  stop:nth-child(4) { stop-color:#515bd4; }
+}
+
+.social-icon[aria-label="Instagram"] svg {
+  fill: #E4405F; /* Instagram pink */
+}
