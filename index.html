@@ -1,107 +1,50 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MY TI TO UMYJEM – čištění střech, fasád, žlabů a zámkové dlažby</title>
-  <meta name="description" content="Profesionální čištění střech, fasád, žlabů a zámkové dlažby po celé ČR. Šetrné a účinné postupy, reference před/po.">
-  <link rel="preload" href="style.css" as="style">
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY TI TO UMYJEM</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="#top">
-        <img src="assets/images/281DD0C6-43E1-4294-B7D2-9E2F00C4DC83.png" alt="MY TI TO UMYJEM logo" />
-        <span>MY TI TO UMYJEM</span>
-      </a>
-      <nav>
-        <a href="#about">O nás</a>
-        <a href="#services">Služby</a>
-        <a href="#reference">Reference</a>
-        <a href="#contact" class="cta">Kontakt</a>
-      </nav>
-    </div>
+  <!-- Hlavička -->
+  <header>
+    <img src="images/logo.png" alt="Logo MY TI TO UMYJEM" width="200">
+    <nav>
+      <a href="#onas">O nás</a>
+      <a href="#sluzby">Služby</a>
+      <a href="#reference">Reference</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="hero" id="top">
-      <div class="container hero-inner">
-        <h1>Čistíme střechy, fasády, žlaby a zámkovou dlažbu</h1>
-        <p>Šetrné postupy, pojištění odpovědnosti a garance viditelných „před/po“ výsledků.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#contact">Nezávazná poptávka</a>
-          <a class="btn" href="tel:+420739598014">Zavolat ihned</a>
-        </div>
-      </div>
-      <div class="hero-bg" aria-hidden="true"></div>
-    </section>
+  <!-- Sekce O nás -->
+  <section id="onas">
+    <h1>O nás</h1>
+    <p>Jsme profesionální tým specializující se na hloubkové čištění střech, fasád, žlabů a dlažby.</p>
+    <img src="images/roof-cleaning-7.jpg" alt="Čištění střechy" width="600">
+  </section>
 
-    <section class="about container" id="about">
-      <h2>O nás</h2>
-      <p>Jsme profesionální tým specializující se na <strong>hloubkové čištění</strong> střech, fasád, žlabů a dlažby. 
-      Používáme ověřené technologie, bezpečné prostředky a vždy dáváme důraz na <strong>detail</strong> a <strong>ochranu povrchů</strong>.</p>
-    </section>
+  <!-- Sekce Služby -->
+  <section id="sluzby">
+    <h2>Služby</h2>
+    <ul>
+      <li>Čištění střech <br><img src="images/20.jpg" alt="Střecha" width="400"></li>
+      <li>Čištění fasád <br><img src="images/czyszczenie-elewacji-bydgoszcz-aquabyd5.jpg" alt="Fasáda" width="400"></li>
+      <li>Čištění dlažby a okapů <br><img src="images/img_20201026_093828.jpg" alt="Dlažba a okapy" width="400"></li>
+    </ul>
+  </section>
 
-    <section class="services container" id="services">
-      <h2>Služby</h2>
-      <div class="grid">
-        <div class="card"><h3>Čištění střech</h3><p>Odstranění mechu, řas a nečistot. Možnost impregnace pro delší výdrž.</p></div>
-        <div class="card"><h3>Čištění fasád</h3><p>Šetrné mytí, které vrátí fasádě barvu a vzhled, bez poškození povrchu.</p></div>
-        <div class="card"><h3>Čištění žlabů</h3><p>Průběžná údržba okapů – prevence zatečení a škod na domě.</p></div>
-        <div class="card"><h3>Zámková dlažba</h3><p>Vyčištění a případná impregnace – výrazně delší čistota.</p></div>
-      </div>
-    </section>
+  <!-- Sekce Reference -->
+  <section id="reference">
+    <h2>Reference</h2>
+    <img src="images/Clear-Wash-Roof-Gutter-Cleaning-Sydney-9-s.jpg" alt="Reference - mytí střechy" width="600">
+    <img src="images/Mycie-elewacji-Skierniewice.webp" alt="Reference - mytí fasády" width="600">
+  </section>
 
-    <section class="reference" id="reference">
-      <div class="container">
-        <h2>Reference (před / po)</h2>
-        <div class="carousel" data-autoplay="true">
-          <!-- Slides will be injected by script.js from images listed there -->
-          <button class="prev" aria-label="Předchozí">‹</button>
-          <div class="track"></div>
-          <button class="next" aria-label="Další">›</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact container" id="contact">
-      <h2>Rychlá poptávka</h2>
-      <p>Vyplňte pár údajů – odpovíme co nejdříve. E‑mail půjde na <strong>info@mytitoumyjem.cz</strong>.</p>
-      <form id="contactForm">
-        <div class="row">
-          <label>Jméno*<input type="text" name="name" required></label>
-          <label>E‑mail*<input type="email" name="email" required></label>
-        </div>
-        <div class="row">
-          <label>Telefon<input type="tel" name="phone"></label>
-          <label>Služba
-            <select name="service">
-              <option value="Střecha">Střecha</option>
-              <option value="Fasáda">Fasáda</option>
-              <option value="Žlaby">Žlaby</option>
-              <option value="Zámková dlažba">Zámková dlažba</option>
-              <option value="Jiné">Jiné</option>
-            </select>
-          </label>
-        </div>
-        <label>Zpráva<textarea name="message" rows="4" placeholder="Stručně popište co potřebujete vyčistit…"></textarea></label>
-        <label class="consent"><input type="checkbox" name="consent" required> Souhlasím se zpracováním údajů pro účely poptávky.</label>
-        <button type="submit" class="btn primary">Odeslat poptávku</button>
-        <p id="formStatus" class="status" role="status" aria-live="polite"></p>
-      </form>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 MY TI TO UMYJEM • IČO / DIČ na vyžádání • <a href="mailto:info@mytitoumyjem.cz">info@mytitoumyjem.cz</a> • <a href="tel:+420739598014">739 598 014</a></p>
-    </div>
+  <!-- Kontakt -->
+  <footer id="kontakt">
+    <p>Kontakt: info@mytitoumyjem.cz</p>
   </footer>
-
-  <script>
-    window.REFERENCE_IMAGES = ["assets/images/281DD0C6-43E1-4294-B7D2-9E2F00C4DC83.png", "assets/images/20.jpg", "assets/images/Clear-Wash-Roof-Gutter-Cleaning-Sydney-9-scaled-(1).jpg", "assets/images/czyszczenie-elewacji-bydgoszcz-aquabyd5.jpg", "assets/images/img_20201026_093828_6-e1681203617218-768x927.webp", "assets/images/Mycie-elewacji-Skierniewice.webp", "assets/images/mycie-elewacji-warszawa.jpg", "assets/images/roof-cleaning-7.jpg"];
-  </script>
-  <script src="script.js" defer></script>
 </body>
 </html>
